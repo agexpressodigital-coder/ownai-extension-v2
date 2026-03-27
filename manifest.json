@@ -8,6 +8,8 @@
     "https://gestordepedidos.ifood.com.br/*",
     "https://pedidos.ifood.com.br/*",
     "https://merchant.ifood.com.br/*",
+    "https://portal.ifood.com.br/*",
+    "https://*.ifood.com.br/*",
     "https://*.99app.com/*",
     "https://mmtvjshrapxpeaicbrdn.supabase.co/*"
   ],
@@ -19,6 +21,8 @@
       "matches": [
         "https://gestordepedidos.ifood.com.br/*",
         "https://merchant.ifood.com.br/*",
+        "https://portal.ifood.com.br/*",
+        "https://*.ifood.com.br/*",
         "https://*.99app.com/*"
       ],
       "js": ["content.js"],
