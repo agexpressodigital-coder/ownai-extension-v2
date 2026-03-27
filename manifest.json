@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "OWN.AI Capture",
+  "version": "2.0",
+  "description": "Captura pedidos do iFood e 99Food em tempo real",
+  "permissions": ["webRequest", "storage", "tabs"],
+  "host_permissions": [
+    "https://gestordepedidos.ifood.com.br/*",
+    "https://pedidos.ifood.com.br/*",
+    "https://merchant.ifood.com.br/*",
+    "https://*.99app.com/*",
+    "https://mmtvjshrapxpeaicbrdn.supabase.co/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gestordepedidos.ifood.com.br/*",
+        "https://merchant.ifood.com.br/*",
+        "https://*.99app.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
